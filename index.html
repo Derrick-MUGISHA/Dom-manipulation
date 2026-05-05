@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <script src="/index.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+  <h1 class="wellCome-text" id="main-title">Welcome</h1>
+
+  <p class="description">This is paragraph one.</p>
+  <p class="description">This is paragraph two.</p>
+
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+<!-- 
+  <script>
+document.write(Date());
+</script> -->
+
+  <img id="myImage" src="/images/pexels-grisha-besko-76503632-36250884.jpg" alt="Image" width="500" height="500">
+
+  <button id="btn">Click Me</button>
+
+  <button onclick="myFunction()">Click me 2</button>
+
+  <script>
+    const title = document.getElementById("main-title");
+
+    title.style.color = "blue";
+
+    title.innerHTML = "Hello World";
+
+
+    const paragraphs = document.getElementsByClassName("description");
+
+    paragraphs[0].style.color = "red";
+    paragraphs[1].style.color = "green";
+    
+
+    const div = document.getElementsByTagName("div");
+
+    div[0].style.backgroundColor = "yellow";
+    div[1].style.backgroundColor = "orange";
+
+
+    const image = document.getElementById("myImage");
+
+    image.src = "/images/pexels-anatoleos-30921078.jpg";
+
+    const button = document.getElementById("btn");
+
+
+    button.addEventListener("click",() => {
+      alert("Button was clicked!");
+    
+    });
+
+    myFunction = () => {
+      alert("Button 2 was clicked!");
+    }
+
+    // const button = document.getElementById("btn");
+
+    //     button.addEventListener("click",() => {
+    //       alert("Button was clicked!");
+      
+    //     });
+  </script>
+</body>
+
+</html>
